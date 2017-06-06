@@ -119,19 +119,6 @@ atom-text-editor .search-results .marker.current-result .region {
 .string {
   color: @amber-200;
   background-color: fadeout(@amber-A200, @background-fade);
-
-
-  &.regexp {
-    // color: @cyan;
-
-    .source.ruby.embedded {
-      // color: @orange;
-    }
-  }
-
-  &.other.link {
-    // color: @red;
-  }
 }
 
 .punctuation {
@@ -155,18 +142,11 @@ atom-text-editor .search-results .marker.current-result .region {
       color: @syntax-text-color;
     }
 
-    &.heading,
-    &.identity {
-      // color: @blue;
-    }
-
     &.bold {
-      // color: @light-orange;
       font-weight: bold;
     }
 
     &.italic {
-      // color: @purple;
       font-style: italic;
     }
   }
@@ -192,19 +172,9 @@ atom-text-editor .search-results .marker.current-result .region {
       background: transparent;
     }
   }
-  &.name.type {
-    // color: @light-orange;
-  }
 
-  &.other.inherited-class {
-    // color: @green;
-  }
   &.name.class, &.name.type.class {
     .entity.name.function;
-  }
-
-  &.name.section {
-    // color: @blue;
   }
 
   &.name.tag {
@@ -238,20 +208,7 @@ atom-text-editor .search-results .marker.current-result .region {
     }
   }
 
-  &.link {
-    // color: @orange;
-  }
-
-  &.require {
-    // color: @blue;
-  }
-
-  &.selector {
-    // color: @purple;
-  }
-
   &.separator {
-    // background-color: @gray;
     color: @syntax-text-color;
   }
 
@@ -264,7 +221,6 @@ atom-text-editor .search-results .marker.current-result .region {
   .doctype {
     .comment;
   }
-
  }
 
 .none {
@@ -273,49 +229,16 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .markup {
   &.bold {
-    // color: @orange;
     font-weight: bold;
   }
 
-  &.changed {
-    // color: @purple;
-  }
-
-  &.deleted {
-    // color: @red;
-  }
-
   &.italic {
-    // color: @purple;
     font-style: italic;
-  }
-
-  &.heading .punctuation.definition.heading {
-    // color: @blue;
-  }
-
-  &.inserted {
-    // color: @green;
-  }
-
-  &.list {
-    // color: @red;
-  }
-
-  &.quote {
-    // color: @orange;
-  }
-
-  &.raw.inline {
-    // color: @green;
   }
 }
 
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
-  &.heading {
-    // color: @green;
-  }
 }
 
 atom-text-editor[mini] .scroll-view {
